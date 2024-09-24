@@ -91,11 +91,11 @@ export class NavService implements OnDestroy {
     // Dashboard
     { headTitle: 'MAIN' },
     {
-      title: 'Dashboard',
-      icon: 'bi-house',
-      dirchange: false,
-      type: 'sub',
-      active: false,
+      // title: 'Dashboard',
+      // icon: 'bi-house',
+      // dirchange: false,
+      // type: 'sub',
+      // active: false,
       children: [
         // {
         //   title: 'Sales',
@@ -203,6 +203,17 @@ export class NavService implements OnDestroy {
         //   path: '/dashboard/customer',
         // },
       ],
+    },
+    {
+      title: 'Dashboard',
+      icon: 'bi-house',
+      active: false,
+      selected: false,
+      badgeClass: 'badge badge-sm bg-secondary badge-hide',
+      badgeValue: 'new',
+      path: '/dashboard/sales',
+      dirchange: false,
+      type: 'link',
     },
     //PAGES
     { headTitle: 'PAGES' },
@@ -747,6 +758,14 @@ export class NavService implements OnDestroy {
         // },
       ],
     },
+    {
+        title: 'Projects',
+        dirchange: false,
+        type: 'link',
+        active: false,
+        selected: false,
+        path: '/dashboard/projects',
+      },
     // APPS
     { headTitle: 'APPS' },
     {
@@ -1860,6 +1879,8 @@ export class NavService implements OnDestroy {
     //   dirchange: false,
     //   type: 'link',
     // },
+    
+    
 
     {
             title: 'Pricing',
